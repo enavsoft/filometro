@@ -4,7 +4,7 @@
     if(isset($_POST['submit']) && !empty($_POST['email']) && !empty($_POST['senha']))
     {
         // Acessa
-        include_once('config.php');
+        include_once('conexao.php');
         $email = $_POST['email'];
         $senha = $_POST['senha'];
 

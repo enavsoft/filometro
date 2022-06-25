@@ -60,7 +60,7 @@
     </nav>
     <br>
     <?php
-        echo "<h2>Bem vindo <u>$logado</u></h2>";
+        echo "<h2>Bem vindo <i>$logado</i></h2>";
     ?>
     <br>
     <div class="box-search">

@@ -13,6 +13,7 @@
         // print_r('Cidade: ' . $_POST['cidade']);
         // print_r('<br>');
         // print_r('Estado: ' . $_POST['estado']);
+
         include_once('conexao.php');
 
         $nome = $_POST['nome'];
@@ -22,7 +23,9 @@
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
 
-        $result = mysqli_query($conexao, "INSERT INTO CADUSER(nome,email,senha,bairro,cidade,estado) VALUES ('$nome','$email','$senha','$bairro','$cidade','$estado')");
+        $result = mysqli_query($conexao, "INSERT INTO CADUSER(NOMEXXX_CAU,EMAILUS_CAU,SENHAXX_CAU,BAIRROX_CAU,CIDADEX_CAU,ESTADOX_CAU)
+        VALUES ('$nome','$email','$senha','$bairro','$cidade','$estado')");
+
     }
 ?>
 <!DOCTYPE html>

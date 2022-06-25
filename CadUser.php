@@ -1,3 +1,20 @@
+<?
+//Teste para ver se está funcionando
+    if(isset($_POST['submit']))
+    {
+        print_r('Nome: ' . $_POST['nome']);
+        print_r('<br>');
+        print_r('E-mail: ' . $_POST['email']);
+        print_r('<br>');
+        print_r('Senha: ' . $_POST['senha']);
+        print_r('<br>');
+        print_r('Bairro: ' . $_POST['bairro']);
+        print_r('<br>');
+        print_r('Cidade: ' . $_POST['cidade']);
+        print_r('<br>');
+        print_r('Estado: ' . $_POST['estado']);
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -81,7 +98,7 @@
 </head>
 <body>
     <div class="box">
-        <form action="">
+        <form action="CadUser.php" method="POST">
             <fieldset>
                 <legend><b>Cadastro de Usuários</b></legend>
                 <br>
@@ -98,11 +115,6 @@
                 <div class="inputBox">
                     <input type="password" name="senha" id="senha" class="inputUser" required>
                     <label for="senha" class="labelInput">Senha</label>
-                </div>
-                <br><br>
-		    <div class="inputBox">
-                    <input type="password" name="senha" id="senha" class="inputUser" required>
-                    <label for="senha" class="labelInput">Repita a Senha</label>
                 </div>
                 <br><br>
                 <div class="inputBox">

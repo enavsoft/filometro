@@ -2,11 +2,10 @@
 
 	$dbHost = 'localhost';
 	$dbUsername = 'enavsoft_fila';
+    $dbPassword ='filometro@123';
 	$dbName = 'enavsoft_filometro';
-    $dbPassword ='Filometro@123';
-
-    $conexao = new mysqli($dbHost, $dbUsername, $dbName, $dbPassword);
-	if($conexao -> connect_errno)
+    $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
+	if($conexao->connect_errno)
     {
         echo "Erro!";
     }

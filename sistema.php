@@ -8,7 +8,7 @@
         unset($_SESSION['senha']);
         header('Location: login.php');
     }
-    $logado = $_SESSION['email'];
+    $logado = $_SESSION['nome'];
     if(!empty($_GET['search']))
     {
         $data = $_GET['search'];

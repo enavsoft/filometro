@@ -22,7 +22,7 @@
         $cidade = $_POST['cidade'];
         $estado = $_POST['estado'];
 
-        $result = mysqli_query($conexao, "INSERT INTO CADUSER(nome,email,senha,bairro,cidade,estado) values ($nome,$email,$senha,$bairro,$cidade,$estado)");
+        $result = mysqli_query($conexao, "INSERT INTO CADUSER(nome,email,senha,bairro,cidade,estado) values ('$nome','$email','$senha','$bairro','$cidade','$estado')");
     }
 ?>
 <!DOCTYPE html>

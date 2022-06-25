@@ -26,6 +26,10 @@
         $result = mysqli_query($conexao, "INSERT INTO CADUSER(NOMEXXX_CAU,EMAILUS_CAU,SENHAXX_CAU,BAIRROX_CAU,CIDADEX_CAU,ESTADOX_CAU)
         VALUES ('$nome','$email','$senha','$bairro','$cidade','$estado')");
 
+        //após fazer o cadastro redirecionar para o login
+
+         header('Location: login.php');
+
     }
 ?>
 <!DOCTYPE html>
@@ -119,7 +123,7 @@
             background-color: dodgerblue;
         }
 
-        
+
     </style>
 </head>
 <body>

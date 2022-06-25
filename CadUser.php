@@ -2,17 +2,27 @@
 //Teste para ver se está funcionando
     if(isset($_POST['submit']))
     {
-        print_r('Nome: ' . $_POST['nome']);
-        print_r('<br>');
-        print_r('E-mail: ' . $_POST['email']);
-        print_r('<br>');
-        print_r('Senha: ' . $_POST['senha']);
-        print_r('<br>');
-        print_r('Bairro: ' . $_POST['bairro']);
-        print_r('<br>');
-        print_r('Cidade: ' . $_POST['cidade']);
-        print_r('<br>');
-        print_r('Estado: ' . $_POST['estado']);
+        // print_r('Nome: ' . $_POST['nome']);
+        // print_r('<br>');
+        // print_r('E-mail: ' . $_POST['email']);
+        // print_r('<br>');
+        // print_r('Senha: ' . $_POST['senha']);
+        // print_r('<br>');
+        // print_r('Bairro: ' . $_POST['bairro']);
+        // print_r('<br>');
+        // print_r('Cidade: ' . $_POST['cidade']);
+        // print_r('<br>');
+        // print_r('Estado: ' . $_POST['estado']);
+        include_once('conexao.php');
+
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $senha = $_POST['senha'];
+        $bairro = $_POST['bairro'];
+        $cidade = $_POST['cidade'];
+        $estado = $_POST['estado'];
+
+        $result = mysqli_query($conexao, "INSERT INTO CADUSER(nome,email,senha,bairro,cidade,estado) values ($nome,$email,$senha,$bairro,$cidade,$estado)");
     }
 ?>
 <!DOCTYPE html>

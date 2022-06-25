@@ -32,6 +32,7 @@
         a:hover{
             background-color: dodgerblue;
         }
+        
     </style>
 <body>
 <h1>Entre ou cadastre-se!</h1>
